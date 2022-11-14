@@ -5,18 +5,12 @@ let secondaParola = prompt("Inserisci un'altra parola");
 
 
 
-
-if (primaParola > secondaParola) {
-    console.log("la prima parola è piu lunga:" + primaParola);
-} else if (secondaParola > primaParola) {
-    console.log("la seconda parola è piu lunga : " + secondaParola); }
-
-
-if (primaParola < secondaParola) {
-    console.log("la prima parola è piu corta:" + primaParola);  
-} else if (secondaParola > primaParola) {
-    console.log("la seconda parola è piu corta: " + secondaParola);
-} 
-
-if (primaParola == secondaParola) { 
+if (primaParola.length < secondaParola.length) {
+    console.log("la prima parola è piu corta:  " + primaParola 
+    + " " +
+    "    la seconda parola è piu lunga : "+ secondaParola);
+} else if (secondaParola.length < primaParola.length) {
+    console.log("la seconda parola è piu cort : " + secondaParola 
+    + primaParola); }
+else  { 
     console.log("la lunghezza è uguale."); }
